@@ -1,5 +1,3 @@
-import './App.css';
-
 // Import the different parts of the page as components
 import Header from './components/Header';
 import Intro from './components/Intro';
