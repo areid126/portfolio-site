@@ -28,7 +28,7 @@ function App() {
     return (
         <>
             <Header scrollTo={scrollTo} about={about} projects={projects} contact={contact} />
-            <Intro />
+            <Intro scrollTo={scrollTo} about={about} projects={projects} contact={contact} />
             <About ref={about} />
             <Projects ref={projects} />
             <Contact ref={contact} />
