@@ -1,7 +1,7 @@
 const Intro = ({ scrollTo, about, projects, contact }) => {
     return (
         <section class="flex gap-7 my-52 mb-56 justify-end">
-            <div class="flex flex-col gap-7 me-60 w-1/3 max-xl:w-1/2 max-[850px]:w-auto cursor-default text-slate-900">
+            <div class="flex flex-col gap-7 me-60 w-1/3 max-xl:w-1/2 max-[850px]:w-auto text-slate-900">
                 <h1 class="text-6xl font-bold">Hello, I am <span onClick={() => scrollTo(about)} class="text-pink-600 cursor-pointer">Abbey Reid</span>, a fullstack web developer</h1>
                 <p class="text-3xl">I specialise in writing scalable and secure responsive web applications, using React, Express and MongoDB.</p>
                 <div class="flex gap-7 text-2xl font-semibold text-slate-50">

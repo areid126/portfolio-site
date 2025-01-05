@@ -1,7 +1,7 @@
 const About = ({ ref }) => {
     return (
         <section ref={ref} class="items-center bg-slate-50 text-slate-50">
-            <h1 class="pt-10 pb-40 text-center text-3xl font-bold text-pink-600">ABOUT ME</h1>
+            <h1 class="pt-10 pb-40 text-center text-3xl font-bold text-pink-600 uppercase">About Me</h1>
             <div class="flex flex-row items-center px-40">
                 <div class="rounded-full border-4 border-dashed">
                     <div class="m-4 flex w-[450px] aspect-[1/1] flex-col items-center justify-center gap-4 rounded-full bg-[url('/australia_3.jpeg')] bg-no-repeat bg-cover text-center text-xl font-semibold text-slate-50">
