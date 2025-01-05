@@ -1,7 +1,7 @@
 const About = ({ ref }) => {
     return (
-        <section ref={ref} class="items-center bg-slate-50 text-slate-800">
-            <h1 class="p-10 text-center text-3xl font-bold text-pink-600">ABOUT ME</h1>
+        <section ref={ref} class="items-center bg-slate-50 text-slate-50">
+            <h1 class="pt-10 pb-40 text-center text-3xl font-bold text-pink-600">ABOUT ME</h1>
             <div class="flex flex-row items-center px-40">
                 <div class="rounded-full border-4 border-dashed">
                     <div class="m-4 flex w-[450px] aspect-[1/1] flex-col items-center justify-center gap-4 rounded-full bg-[url('/australia_3.jpeg')] bg-no-repeat bg-cover text-center text-xl font-semibold text-slate-50">
@@ -13,31 +13,38 @@ const About = ({ ref }) => {
                     <p class="rounded-xl bg-pink-500 px-5 py-3">Outside of work I do archery and have an interest in travelling and sightseeing. I recently completed a semester studying abroad in Australia at Macquarie University, where I developed both my skills as a web developer and myself as a person, becoming more independent and responsible.</p>
                 </div>
             </div>
-            <div class="flex flex-row items-center px-40">
-                <ul class="mx-28 flex flex-col gap-3 text-xl font-semibold text-slate-50">
-                    <li class="rounded-xl bg-pink-700 px-5 py-3">I am proficient in using Express and React to create websites.</li>
-                    <li class="rounded-xl bg-pink-600 px-5 py-3">I am fluent in several programming languages and am familiar with procedural and object-oriented programming. These languages are Javascript, Java, C and Python.</li>
-                    <li class="rounded-xl bg-pink-500 px-5 py-3">I am well versed in both document and relational databases and have particular experience with MongoDB and MySQL.</li>
-                    <li class="rounded-xl bg-pink-400 px-5 py-3">I have experience working in a scrum setting and have used version control as part of several projects. I have used both plain Git and GitHub.</li>
-                </ul>
+            <h2 class="text-center mt-32 text-2xl font-bold text-slate-800">SKILLS</h2>
+            <ul class="flex justify-center gap-11 px-12 py-14 text-center text-xl font-semibold">
                 <div class="rounded-full border-4 border-dashed">
-                    <div class="m-4 flex h-[450px] w-[450px] flex-col items-center justify-center gap-4 rounded-full bg-[url('/australia_1.jpeg')] bg-no-repeat bg-cover text-center text-xl font-semibold text-slate-50">
-                    </div>
+                    <li class="m-4 flex h-48 w-48 items-center justify-center rounded-full  bg-sky-500 ">
+                        Express<br />
+                        React<br />
+                        HTML<br />
+                        CSS
+                    </li>
                 </div>
-            </div>
-
-            <div class="rounded-full border-4 border-dashed">
-                <div class="m-4 flex h-[300px] w-[300px] flex-col items-center justify-center gap-4 rounded-full bg-[url('/australia_2.jpeg')] bg-no-repeat bg-cover text-center text-xl font-semibold text-slate-50">
+                <div class="rounded-full border-4 border-dashed">
+                    <li class="m-4 flex h-48 w-48 items-center justify-center rounded-full bg-amber-400">
+                        Javascript<br />
+                        Java<br />
+                        C<br />
+                        Python
+                    </li>
                 </div>
-            </div>
-            <div class="rounded-full border-4 border-dashed">
-                <div class="m-4 flex h-[300px] w-[300px] flex-col items-center justify-center gap-4 rounded-full bg-[url('/australia_4.jpeg')] bg-no-repeat bg-cover text-center text-xl font-semibold text-slate-50">
+                <div class="rounded-full border-4 border-dashed">
+                    <li class="m-4 flex h-48 w-48 items-center justify-center rounded-full bg-sky-500">
+                        MongoDB<br />
+                        MySQL<br />
+                        SQL
+                    </li>
                 </div>
-            </div>
-            <div class="rounded-full border-4 border-dashed">
-                <div class="m-4 flex h-[200px] w-[200px] flex-col items-center justify-center gap-4 rounded-full bg-[url('/australia_5.jpeg')] bg-no-repeat bg-cover text-center text-xl font-semibold text-slate-50">
+                <div class="rounded-full border-4 border-dashed">
+                    <li class="m-4 flex h-48 w-48 items-center justify-center rounded-full bg-amber-400">
+                        Git<br />
+                        GitHub
+                    </li>
                 </div>
-            </div>
+            </ul>
         </section>
     );
 }
