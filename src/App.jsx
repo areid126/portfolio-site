@@ -16,6 +16,7 @@ function App() {
     const about = useRef(null);
     const projects = useRef(null);
     const contact = useRef(null);
+    const intro = useRef(null);
 
     // Set up the function to scroll to a specific part of the page
     const scrollTo = (ref) => {
@@ -27,12 +28,12 @@ function App() {
 
     return (
         <>
-            <Header scrollTo={scrollTo} about={about} projects={projects} contact={contact} />
+            <Header ref={intro} scrollTo={scrollTo} about={about} projects={projects} contact={contact} />
             <Intro scrollTo={scrollTo} about={about} projects={projects} contact={contact} />
             <About ref={about} />
             <Projects ref={projects} />
             <Contact ref={contact} />
-            <Footer />
+            <Footer scrollTo={scrollTo} about={about} projects={projects} contact={contact} intro={intro} />
         </>
     );
 }
