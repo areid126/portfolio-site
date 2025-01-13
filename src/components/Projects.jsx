@@ -2,9 +2,9 @@ const Projects = ({ ref }) => {
     return (
         <section ref={ref} class="bg-sky-500 flex flex-col items-center">
             <h1 class="py-10 text-center text-3xl font-bold text-slate-50 uppercase">My Projects</h1>
-            <ul class="flex flex-col gap-6 w-[1300px] pb-32 pt-14">
+            <ul class="flex flex-col gap-6 pb-32 pt-14 max-w-[1280px]">
                 <li class="flex bg-slate-50 p-10 rounded-3xl gap-7 mx-14" >
-                    <img class="w-1/2 object-scale-down rounded-3xl" src="/australia_1.jpeg"></img>
+                    <img class="w-1/2 object-scale-down rounded-3xl" src="/australia_4.jpeg"></img>
                     <div class="flex flex-col gap-3 w-1/2">
                         <div class="flex justify-between items-center">
                             <a><h1 class="text-2xl font-bold text-sky-500 uppercase cursor-pointer">App Store</h1></a>

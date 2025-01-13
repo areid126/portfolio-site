@@ -51,15 +51,37 @@ const Contact = ({ ref }) => {
             else if (res.status === 400) setErr("Please complete all fields");
             else if (res.status === 403) setErr("An error occurred");
             else if (res.status === 404) setErr("Please enter a valid email");
-
         } catch {
             setErr("An error occurred. Please try again later");
         }
     }
 
+    // Event handler for sending a second message
+    const onClick = () => {
+        setName(undefined);
+        setEmail(undefined);
+        setSubject(undefined);
+        setMessage(undefined);
+        setGotcha(undefined);
+        setErr(undefined);
+        setSubmitted(false);
+    }
+
+    // Return a different form after the request has been submitted
+    if(submitted) {
+        return (
+            <section ref={ref} class="flex justify-center text-slate-800 bg-amber-300 min-h-screen items-center">
+                <div class="flex flex-col w-[450px] p-6 rounded-3xl bg-white h-fit">
+                    <h1 class="py-10 text-center text-3xl font-bold">Thank you for your message</h1>
+                    <button onClick={onClick} class="text-xl font-semibold text-slate-50 h-12 cursor-pointer rounded-full bg-amber-400 px-6 py-2.5 hover:bg-amber-100 hover:text-amber-400 my-7">Send Another Message</button>
+                </div>
+            </section>
+        )
+    }
+
     return (
-        <section ref={ref} class="p-36 flex justify-center text-slate-800 bg-amber-300">
-            <form class="flex flex-col w-[450px] border p-6 rounded-3xl bg-white">
+        <section ref={ref} class="flex justify-center text-slate-800 bg-amber-300 min-h-screen items-center">
+            <form class="flex flex-col w-[450px] p-6 rounded-3xl bg-white h-fit">
                 <h1 class="py-10 text-center text-3xl font-bold  uppercase">Contact Me</h1>
                 
                 <label class="font-semibold my-2">Name</label>

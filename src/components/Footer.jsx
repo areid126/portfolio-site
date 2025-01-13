@@ -10,7 +10,7 @@ const Footer = ({ scrollTo, about, projects, contact, intro }) => {
                     <li onClick={() => scrollTo(contact)} class="cursor-pointer text-center text-xl font-bold uppercase text-amber-300">Contact</li>
                 </ul>
             </div>
-            <a class="group h-fit w-fit rounded-full border p-2 border-slate-800 hover:opacity-75">
+            <a target="_blank" rel="noopener noreferrer" href="https://github.com/areid126" class="group h-fit w-fit rounded-full border p-2 border-slate-800 hover:opacity-75">
                 <div class="aspect-[1/1] h-8 w-8 cursor-pointer rounded-full bg-[url('/github-slate-800.png')] bg-contain bg-center bg-no-repeat"></div>
             </a>
             <p class="pb-8 font-semibold text-slate-800">© Copyright 2025 | All Rights Reserved</p>
