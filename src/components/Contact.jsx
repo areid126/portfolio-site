@@ -80,7 +80,7 @@ const Contact = ({ ref }) => {
 
     return (
         <section ref={ref} class="flex justify-center text-slate-800 bg-amber-300 min-h-screen items-center">
-            <form class="flex flex-col w-[450px] p-6 rounded-3xl bg-white h-fit">
+            <form class="flex flex-col w-[450px] p-6 rounded-3xl bg-white h-fit m-8">
                 <h1 class="py-10 text-center text-3xl font-bold  uppercase">Contact Me</h1>
                 
                 <label class="font-semibold my-2">Name</label>
@@ -94,7 +94,7 @@ const Contact = ({ ref }) => {
                 <input onChange={(e) => setSubject(e.target.value)} class="outline-none focus:ring-2 ring-offset-2 ring-slate-600 border rounded-md p-2" placeholder="subject" type="text" name="subject"></input>
                 
                 <label class="font-semibold my-2">Message</label>
-                <textarea onChange={(e) => setMessage(e.target.value)} class="outline-none focus:ring-2 ring-offset-2 ring-slate-600 border rounded-md p-2 min-h-36" placeholder="message" name="message"></textarea>
+                <textarea onChange={(e) => setMessage(e.target.value)} class="outline-none focus:ring-2 ring-offset-2 ring-slate-600 border rounded-md p-2 min-h-36 max-sm:min-h-20" placeholder="message" name="message"></textarea>
                 <p class="text-center font-semibold mt-4 text-rose-700" >{err}</p>
                 <input onClick={onSubmit} class="text-xl font-semibold text-slate-50 h-12 cursor-pointer rounded-full bg-amber-400 px-6 py-2.5 hover:bg-amber-100 hover:text-amber-400 my-7" type="submit" value="Submit"></input>
             </form>

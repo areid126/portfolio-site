@@ -1,9 +1,9 @@
 const Footer = ({ scrollTo, about, projects, contact, intro }) => {
     return (
         <footer class="flex flex-col items-center gap-7 bg-slate-50 pt-10">
-            <div class="flex w-full items-center justify-around">
+            <div class="flex w-full items-center justify-around max-md:flex-col max-md:gap-4">
                 <h1 class="text-center text-3xl font-semibold text-slate-800">Abbey's Portfolio</h1>
-                <ul class="flex gap-10">
+                <ul class="flex gap-10 max-sm:grid max-sm:grid-cols-2 max-sm:gap-y-4">
                     <li onClick={() => scrollTo(intro)} class="cursor-pointer text-center text-xl font-bold uppercase text-slate-800 hover:underline underline-offset-4">Home</li>
                     <li onClick={() => scrollTo(about)} class="cursor-pointer text-center text-xl font-bold uppercase text-pink-600 hover:underline underline-offset-4">About</li>
                     <li onClick={() => scrollTo(projects)} class="cursor-pointer text-center text-xl font-bold uppercase text-sky-500 hover:underline underline-offset-4">Projects</li>

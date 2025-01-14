@@ -1,16 +1,15 @@
 const Projects = ({ ref }) => {
     return (
-        <section ref={ref} class="bg-sky-500 flex flex-col items-center">
+        <section ref={ref} class="bg-sky-500 flex flex-col items-center min-h-screen">
             <h1 class="py-10 text-center text-3xl font-bold text-slate-50 uppercase">My Projects</h1>
             <ul class="flex flex-col gap-6 pb-32 max-w-[1280px] items-center">
-
-                <li class="flex xl:flex-row flex-col bg-slate-50 p-7 rounded-3xl gap-7 mx-14 max-xl:w-1/2" >
+                <li class="flex xl:flex-row flex-col bg-slate-50 p-7 rounded-3xl gap-7 mx-14 max-xl:w-1/2 max-md:gap-4 max-sm:w-4/5" >
                     <img class="xl:w-1/2 object-scale-down rounded-3xl" src="/australia_4.jpeg"></img>
                     <div class="flex flex-col gap-3 xl:w-1/2">
                         <div class="flex justify-between items-center">
-                            <a><h1 class="text-2xl font-bold text-sky-500 uppercase cursor-pointer">App Store</h1></a>
+                            <a><h1 class="text-2xl font-bold text-sky-500 uppercase cursor-pointer max-sm:text-xl">App Store</h1></a>
                             <a class="bg-sky-500 h-fit w-fit rounded-full p-2 hover:bg-sky-400 cursor-pointer">
-                                <div class="bg-[url('/arrow.png')] w-8 h-8 aspect-[1/1] rounded-full bg-no-repeat bg-contain bg-center">
+                                <div class="bg-[url('/arrow.png')] w-8 h-8 max-sm:h-6 max-sm:w-6 aspect-[1/1] rounded-full bg-no-repeat bg-contain bg-center">
                                 </div>
                             </a>
                         </div>
@@ -18,13 +17,13 @@ const Projects = ({ ref }) => {
                         <p class="text-xl font-semibold text-slate-800 max-xl:hidden">This site is hosted on a free instance of render and so may take some time to load.</p>
                     </div>
                 </li>
-                <li class="flex xl:flex-row flex-col bg-slate-50 p-7 rounded-3xl gap-7 mx-14 max-xl:w-1/2" >
+                <li class="flex xl:flex-row flex-col bg-slate-50 p-7 rounded-3xl gap-7 mx-14 max-xl:w-1/2 max-md:gap-4 max-sm:w-4/5" >
                     <img class="xl:w-1/2 object-scale-down rounded-3xl" src="/australia_2.jpeg"></img>
                     <div class="flex flex-col gap-3 xl:w-1/2">
                         <div class="flex justify-between items-center">
-                            <a><h1 class="text-2xl font-bold text-sky-500 uppercase cursor-pointer">Flashcards</h1></a>
+                            <a><h1 class="text-2xl font-bold text-sky-500 uppercase cursor-pointer max-sm:text-xl">Flashcards</h1></a>
                             <a class="bg-sky-500 h-fit w-fit rounded-full p-2 hover:bg-sky-400 cursor-pointer">
-                                <div class="bg-[url('/arrow.png')] w-8 h-8 aspect-[1/1] rounded-full bg-no-repeat bg-contain bg-center">
+                                <div class="bg-[url('/arrow.png')] w-8 h-8 max-sm:h-6 max-sm:w-6 aspect-[1/1] rounded-full bg-no-repeat bg-contain bg-center">
                                 </div>
                             </a>
                         </div>
