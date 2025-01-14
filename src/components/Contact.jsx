@@ -68,16 +68,15 @@ const Contact = ({ ref }) => {
     }
 
     // Return a different form after the request has been submitted
-    if(submitted) {
-        return (
-            <section ref={ref} class="flex justify-center text-slate-800 bg-amber-300 min-h-screen items-center">
-                <div class="flex flex-col w-[450px] p-6 rounded-3xl bg-white h-fit">
-                    <h1 class="py-10 text-center text-3xl font-bold">Thank you for your message</h1>
-                    <button onClick={onClick} class="text-xl font-semibold text-slate-50 h-12 cursor-pointer rounded-full bg-amber-400 px-6 py-2.5 hover:bg-amber-100 hover:text-amber-400 my-7">Send Another Message</button>
-                </div>
-            </section>
-        )
-    }
+    if(submitted) return (
+        <section ref={ref} class="flex justify-center text-slate-800 bg-amber-300 min-h-screen items-center">
+            <div class="flex flex-col w-[450px] p-6 rounded-3xl bg-white h-fit">
+                <h1 class="py-10 text-center text-3xl font-bold">Thank you for your message</h1>
+                <button onClick={onClick} class="text-xl font-semibold text-slate-50 h-12 cursor-pointer rounded-full bg-amber-400 px-6 py-2.5 hover:bg-amber-100 hover:text-amber-400 my-7">Send Another Message</button>
+            </div>
+        </section>
+    );
+    
 
     return (
         <section ref={ref} class="flex justify-center text-slate-800 bg-amber-300 min-h-screen items-center">

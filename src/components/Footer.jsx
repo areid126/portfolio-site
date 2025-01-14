@@ -4,10 +4,10 @@ const Footer = ({ scrollTo, about, projects, contact, intro }) => {
             <div class="flex w-full items-center justify-around">
                 <h1 class="text-center text-3xl font-semibold text-slate-800">Abbey's Portfolio</h1>
                 <ul class="flex gap-10">
-                    <li onClick={() => scrollTo(intro)} class="cursor-pointer text-center text-xl font-bold uppercase text-slate-800">Home</li>
-                    <li onClick={() => scrollTo(about)} class="cursor-pointer text-center text-xl font-bold uppercase text-pink-600">About</li>
-                    <li onClick={() => scrollTo(projects)} class="cursor-pointer text-center text-xl font-bold uppercase text-sky-500">Projects</li>
-                    <li onClick={() => scrollTo(contact)} class="cursor-pointer text-center text-xl font-bold uppercase text-amber-300">Contact</li>
+                    <li onClick={() => scrollTo(intro)} class="cursor-pointer text-center text-xl font-bold uppercase text-slate-800 hover:underline underline-offset-4">Home</li>
+                    <li onClick={() => scrollTo(about)} class="cursor-pointer text-center text-xl font-bold uppercase text-pink-600 hover:underline underline-offset-4">About</li>
+                    <li onClick={() => scrollTo(projects)} class="cursor-pointer text-center text-xl font-bold uppercase text-sky-500 hover:underline underline-offset-4">Projects</li>
+                    <li onClick={() => scrollTo(contact)} class="cursor-pointer text-center text-xl font-bold uppercase text-amber-300 hover:underline underline-offset-4">Contact</li>
                 </ul>
             </div>
             <a target="_blank" rel="noopener noreferrer" href="https://github.com/areid126" class="group h-fit w-fit rounded-full border p-2 border-slate-800 hover:opacity-75">

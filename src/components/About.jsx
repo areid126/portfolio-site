@@ -1,8 +1,8 @@
 const About = ({ ref }) => {
     return (
         <section ref={ref} class="items-center bg-slate-50 text-slate-50">
-            <h1 class="pt-10 pb-40 text-center text-3xl font-bold text-pink-600 uppercase">About Me</h1>
-            <div class="flex flex-row items-center px-5 gap-28 max-w-[1280px] m-auto">
+            <h1 class="py-10 xl:pb-40 text-center text-3xl font-bold text-pink-600 uppercase">About Me</h1>
+            <div class="flex xl:flex-row flex-col items-center px-5 xl:gap-28 gap-10 px-8 max-w-[1280px] mx-auto">
                 <div class="rounded-full border-4 border-dashed w-fit h-fit">
                     <div class="m-4 flex w-[450px] aspect-[1/1] flex-col items-center justify-center rounded-full bg-[url('/australia_3.jpeg')] bg-no-repeat bg-cover text-center text-xl font-semibold text-slate-50">
                     </div>
@@ -17,32 +17,32 @@ const About = ({ ref }) => {
                 </div>
             </div>
             <h2 class="text-center mt-32 text-2xl font-bold text-slate-800">SKILLS</h2>
-            <ul class="flex justify-center gap-11 px-12 py-14 text-center text-xl font-semibold">
-                <div class="rounded-full border-4 border-dashed">
-                    <li class="m-4 flex h-48 w-48 items-center justify-center rounded-full bg-pink-800">
+            <ul class="flex justify-center gap-11 px-12 py-14 text-center text-xl font-semibold max-w-[1280px] mx-auto max-lg:grid max-lg:grid-cols-2">
+                <div class="rounded-full border-4 border-dashed w-1/4 aspect-[1/1] max-lg:w-auto">
+                    <li class="m-4 flex aspect-[1/1] items-center justify-center rounded-full bg-pink-800">
                         Express<br />
                         React<br />
                         HTML<br />
                         CSS
                     </li>
                 </div>
-                <div class="rounded-full border-4 border-dashed">
-                    <li class="m-4 flex h-48 w-48 items-center justify-center rounded-full bg-pink-700">
+                <div class="rounded-full border-4 border-dashed w-1/4 aspect-[1/1] max-lg:w-auto">
+                    <li class="m-4 flex aspect-[1/1] items-center justify-center rounded-full bg-pink-700">
                         Javascript<br />
                         Java<br />
                         C<br />
                         Python
                     </li>
                 </div>
-                <div class="rounded-full border-4 border-dashed">
-                    <li class="m-4 flex h-48 w-48 items-center justify-center rounded-full bg-pink-600">
+                <div class="rounded-full border-4 border-dashed w-1/4 aspect-[1/1] max-lg:w-auto">
+                    <li class="m-4 flex aspect-[1/1] items-center justify-center rounded-full bg-pink-600">
                         MongoDB<br />
                         MySQL<br />
                         SQL
                     </li>
                 </div>
-                <div class="rounded-full border-4 border-dashed">
-                    <li class="m-4 flex h-48 w-48 items-center justify-center rounded-full bg-pink-500">
+                <div class="rounded-full border-4 border-dashed w-1/4 aspect-[1/1] max-lg:w-auto">
+                    <li class="m-4 flex aspect-[1/1] items-center justify-center rounded-full bg-pink-500">
                         Git<br />
                         GitHub
                     </li>

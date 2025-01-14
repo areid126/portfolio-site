@@ -1,11 +1,11 @@
 const Intro = ({ scrollTo, about, projects, contact }) => {
     return (
-        <section class="flex gap-7 my-52 mb-56 justify-end">
-            <div class="flex justify-around text-slate-800 items-center">
-                <div class="rounded-full border-4 border-dashed w-fit h-fit">
+        <section class="flex gap-7 py-52 pb-56 justify-center items-center bg-white">
+            <div class="flex justify-around text-slate-800 items-center w-auto xl:w-[1280px]">
+                <div class="rounded-full border-4 border-dashed w-fit h-fit max-xl:hidden">
                     <div class="m-4 flex w-[450px] aspect-[1/1] flex-col items-center justify-center rounded-full bg-[url('/australia_1.jpeg')] bg-no-repeat bg-cover text-center text-xl font-semibold text-slate-50"></div>
                 </div>
-                <div class="flex flex-col gap-7 w-1/3 text-slate-800 max-w-[1280px]">
+                <div class="flex flex-col gap-7 text-slate-800 max-w-[450px]">
                     <h1 class="text-6xl font-bold">Hello, I am <span onClick={() => scrollTo(about)} class="text-pink-600 cursor-pointer">Abbey Reid</span>, a fullstack web developer</h1>
                     <p class="text-3xl">I specialise in writing scalable and secure responsive web applications, using React, Express and MongoDB.</p>
                     <div class="flex gap-7 text-2xl font-semibold text-slate-50">
