@@ -1,10 +1,9 @@
 // Import the different parts of the page as components
-import Header from './components/Header';
-import Intro from './components/Intro';
-import About from './components/About';
-import Projects from './components/Projects';
-import Contact from './components/Contact';
-import Footer from './components/Footer';
+import Intro from './components/Intro/Intro';
+import About from './components/About/About';
+import Projects from './components/Projects/Projects';
+import Contact from './components/Contact/Contact';
+import Footer from './components/Footer/Footer';
 
 // Set up jumping between sections
 import { useRef } from "react";

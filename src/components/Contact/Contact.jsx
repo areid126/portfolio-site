@@ -1,7 +1,20 @@
 import { useState } from "react";
+import ImageList from "../ImageList";
 
 // Regex for identifying if something looks like an email
 const EMAIL = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+
+const IMAGES1 = [
+    {src: "/arrow-2.svg", style: "rotate-[60deg]"},
+    {src: "/arrow-7.svg", style: "rotate-[25deg]"},
+    {src: "/arrow-5.svg", style: "rotate-[20deg]"},
+];
+
+const IMAGES2 = [
+    {src: "/arrow-9.svg", style: "rotate-90"},
+    {src: "/arrow-6.svg", style: "rotate-90"},
+    {src: "/arrow-4.svg", style: "rotate-180"},
+];
 
 const Contact = ({ ref }) => {
     // State for collecting inputs
@@ -80,15 +93,11 @@ const Contact = ({ ref }) => {
 
     return (
         <section ref={ref} class="flex justify-center text-slate-800 bg-amber-300 min-h-screen items-center">
-            <div class="max-lg:hidden">
-                <img class="rotate-[60deg]" src="/arrow-2.svg"></img>
-                <img class="rotate-[25deg]" src="/arrow-7.svg"></img>
-                <img class="rotate-[20deg]" src="/arrow-5.svg"></img>
-            </div>
+            <ImageList images={IMAGES1} hide={"max-lg:hidden"}/>
             <form class="flex flex-col w-[450px] p-6 rounded-3xl bg-white h-fit m-8">
 
                 <div class="flex flex-col items-center py-10">
-                    <h1 class="text-center text-3xl font-bold  uppercase">Contact Me</h1>
+                    <h1 class="text-center text-3xl font-bold uppercase">Contact Me</h1>
                     <img src="/underline-4-slate-800.svg"></img>
                 </div>
 
@@ -107,11 +116,7 @@ const Contact = ({ ref }) => {
                 <p class="text-center font-semibold mt-4 text-rose-700" >{err}</p>
                 <input onClick={onSubmit} class="text-xl font-semibold text-slate-50 h-12 cursor-pointer rounded-full bg-amber-400 px-6 py-2.5 hover:bg-amber-100 hover:text-amber-400 my-7" type="submit" value="Submit"></input>
             </form>
-            <div class="max-lg:hidden">
-                <img class="rotate-90" src="/arrow-9.svg"></img>
-                <img class="rotate-90" src="/arrow-6.svg"></img>
-                <img class="rotate-180" src="/arrow-4.svg"></img>
-            </div>
+            <ImageList images={IMAGES2} hide={"max-lg:hidden"}/>
         </section>
     );
 }

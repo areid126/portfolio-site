@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { RemoveScrollBar } from "react-remove-scroll-bar";
 import { AnimatePresence, motion } from 'framer-motion'
+import NavButtons from "./NavButtons";
 
 
 // Animation for the background
@@ -19,8 +20,16 @@ const animateSidebar = {
     transition: { duration: 0.2 },
 }
 
-const Sidebar = ({ scrollTo, about, projects, contact}) => {
+const SIDEBARSTYLE = "flex-col gap-5 p-10";
+
+const Sidebar = ({ scrollTo, about, projects, contact }) => {
     const [open, setOpen] = useState(false);
+
+    const BUTTONS = [
+        {colour: "bg-pink-600 hover:bg-pink-200 hover:text-pink-600", name: "About", onClick: () => {setOpen(false); scrollTo(about);}},
+        {colour: "bg-sky-500 hover:bg-sky-200 hover:text-sky-500", name: "Projects", onClick: () => {setOpen(false); scrollTo(projects);}}, 
+        {colour: "bg-amber-400 hover:bg-amber-100 hover:text-amber-400", name: "Contact", onClick: () => {setOpen(false); scrollTo(contact);}}, 
+    ];
 
     return (
         <>  
@@ -32,11 +41,7 @@ const Sidebar = ({ scrollTo, about, projects, contact}) => {
                         <motion.div {...animateBackground} onClick={() => setOpen(false)} class="absolute h-full w-full top-0 bg-slate-800 opacity-75"></motion.div>
                         <motion.nav {...animateSidebar} class="absolute top-0 right-0 h-full bg-slate-50 flex flex-col items-end opacity-100">
                             <button onClick={() => setOpen(false)}  class="bg-[url('/x-slate-800.png')] bg-no-repeat bg-contain h-4 w-4 m-4"></button>
-                            <ul class="flex flex-col gap-5 text-2xl font-semibold text-slate-50 p-10 max-sm:text-lg">
-                                <li onClick={() => {setOpen(false); scrollTo(about);}} class="h-14 max-sm:h-fit cursor-pointer rounded-full bg-pink-600 px-6 py-2.5 hover:bg-pink-200 hover:text-pink-600 text-center">About</li>
-                                <li onClick={() => {setOpen(false); scrollTo(projects);}} class="h-14 max-sm:h-fit cursor-pointer rounded-full bg-sky-500 px-6 py-2.5 hover:bg-sky-200 hover:text-sky-500 text-center">Projects</li>
-                                <li onClick={() => {setOpen(false); scrollTo(contact);}} class="h-14 max-sm:h-fit cursor-pointer rounded-full bg-amber-400 px-6 py-2.5 hover:bg-amber-100 hover:text-amber-400 text-center">Contact</li>
-                            </ul>
+                            <NavButtons buttons={BUTTONS} style={SIDEBARSTYLE} />
                             <img src="/star.svg" class="m-10"></img>
                         </motion.nav>
                     </>
