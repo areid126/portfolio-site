@@ -1,7 +1,13 @@
 const About = ({ ref }) => {
     return (
-        <section ref={ref} class="items-center bg-slate-50 text-slate-50 min-h-screen">
-            <h1 class="py-10 xl:pb-40 text-center text-3xl font-bold text-pink-600 uppercase">About Me</h1>
+        <section ref={ref} class="items-center bg-slate-50 text-slate-50 min-h-screen relative">
+            <img class="absolute top-0 left-60 max-xl:hidden" src="/sparkles-1.svg"></img>
+            <img class="absolute bottom-96 right-4 max-xl:hidden" src="/sparkles-1.svg"></img>
+            <img class="absolute top-[700px] left-[400px] max-xl:hidden" src="/sparkles-2.svg"></img>
+            <div class="flex flex-col gap-1 items-center pb-10 xl:pb-40 z-2">
+                <h1 class="text-center text-3xl font-bold text-pink-600 uppercase">About Me</h1>
+                <img src="/underline-3-pink-600.svg"></img>
+            </div>
             <div class="flex xl:flex-row flex-col items-center px-5 xl:gap-28 gap-10 px-8 max-w-[1280px] mx-auto">
                 <div class="rounded-full border-4 border-dashed w-[450px] h-[450px] max-[500px]:w-full max-[500px]:mx-5 max-[500px]:h-auto aspect-[1/1]">
                     <div class="m-4 flex aspect-[1/1] items-center justify-center rounded-full bg-[url('/australia_3.jpeg')] bg-no-repeat bg-cover">
@@ -17,8 +23,8 @@ const About = ({ ref }) => {
                 </div>
             </div>
             <h2 class="text-center mt-32 text-2xl font-bold text-slate-800">SKILLS</h2>
-            <ul class="flex justify-center gap-11 px-12 py-14 text-center text-xl font-semibold max-w-[1280px] mx-auto max-lg:grid max-lg:grid-cols-2 max-sm:grid-cols-1">
-                <div class="rounded-full border-4 border-dashed w-1/4 aspect-[1/1] max-lg:w-auto">
+            <ul class="flex justify-center gap-11 px-12 py-14 text-center text-xl font-semibold max-w-[1280px] mx-auto max-lg:max-w-[500px] max-lg:grid max-lg:grid-cols-2 max-sm:grid-cols-1 max-sm:max-w-[250px] max-lg:p-0">
+                <div class="rounded-full border-4 border-dashed w-1/4 aspect-[1/1] max-lg:w-auto max-w-[250px]">
                     <li class="m-4 flex aspect-[1/1] items-center justify-center rounded-full bg-pink-800">
                         Express<br />
                         React<br />
@@ -26,7 +32,7 @@ const About = ({ ref }) => {
                         CSS
                     </li>
                 </div>
-                <div class="rounded-full border-4 border-dashed w-1/4 aspect-[1/1] max-lg:w-auto">
+                <div class="rounded-full border-4 border-dashed w-1/4 aspect-[1/1] max-lg:w-auto  max-w-[250px]">
                     <li class="m-4 flex aspect-[1/1] items-center justify-center rounded-full bg-pink-700">
                         Javascript<br />
                         Java<br />
@@ -34,20 +40,21 @@ const About = ({ ref }) => {
                         Python
                     </li>
                 </div>
-                <div class="rounded-full border-4 border-dashed w-1/4 aspect-[1/1] max-lg:w-auto">
+                <div class="rounded-full border-4 border-dashed w-1/4 aspect-[1/1] max-lg:w-auto  max-w-[250px]">
                     <li class="m-4 flex aspect-[1/1] items-center justify-center rounded-full bg-pink-600">
                         MongoDB<br />
                         MySQL<br />
                         SQL
                     </li>
                 </div>
-                <div class="rounded-full border-4 border-dashed w-1/4 aspect-[1/1] max-lg:w-auto">
+                <div class="rounded-full border-4 border-dashed w-1/4 aspect-[1/1] max-lg:w-auto  max-w-[250px]">
                     <li class="m-4 flex aspect-[1/1] items-center justify-center rounded-full bg-pink-500">
                         Git<br />
                         GitHub
                     </li>
                 </div>
             </ul>
+            <img src="/transition-3-slate-50.svg" class="bg-sky-500 rotate-180"></img>
         </section>
     );
 }

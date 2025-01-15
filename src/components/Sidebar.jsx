@@ -24,7 +24,7 @@ const Sidebar = ({ scrollTo, about, projects, contact}) => {
 
     return (
         <>  
-            <button onClick={() => setOpen(true)} class="bg-[url('/lines-slate-800.png')] bg-no-repeat bg-contain h-12 w-12 max-sm:h-9 max-sm:w-9"></button>
+            <button onClick={() => setOpen(true)} class="bg-[url('/lines-slate-800.png')] bg-no-repeat bg-contain h-12 w-12 max-sm:h-9 max-sm:w-9 lg:hidden"></button>
             <AnimatePresence mode="wait" initial={false}>
                 {open && (
                     <>
@@ -37,6 +37,7 @@ const Sidebar = ({ scrollTo, about, projects, contact}) => {
                                 <li onClick={() => {setOpen(false); scrollTo(projects);}} class="h-14 max-sm:h-fit cursor-pointer rounded-full bg-sky-500 px-6 py-2.5 hover:bg-sky-200 hover:text-sky-500 text-center">Projects</li>
                                 <li onClick={() => {setOpen(false); scrollTo(contact);}} class="h-14 max-sm:h-fit cursor-pointer rounded-full bg-amber-400 px-6 py-2.5 hover:bg-amber-100 hover:text-amber-400 text-center">Contact</li>
                             </ul>
+                            <img src="/star.svg" class="m-10"></img>
                         </motion.nav>
                     </>
                 )}
