@@ -1,15 +1,6 @@
 import Header from "../Header/Header";
 import IconButton from "./IconButton";
 
-const Button = ({name, buttonColour, textColour, onClick}) => {
-    return (
-        <button onClick={onClick} class={`group h-14 cursor-pointer rounded-full ${buttonColour} px-6 py-2.5 max-sm:px-0 text-nowrap`}>
-            <span class={`${textColour} bg-no-repeat bg-contain ps-10 max-sm:ps-14 max-sm:bg-center`}></span>
-            <span class="max-sm:hidden">{name}</span>
-        </button>
-    );
-}
-
 const Intro = ({ scrollTo, about, projects, contact, ref }) => {
     return (
         <section class="flex flex-col gap-7 items-center bg-white min-h-screen bg-[url('/circles-slate-50.svg')] relative">

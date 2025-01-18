@@ -25,10 +25,10 @@ const About = ({ ref }) => {
             <h2 class="text-center mt-32 text-2xl font-bold text-slate-800">SKILLS</h2>
             <SkillList/>
             <ImageList images={IMAGES} hide={"max-xl:hidden"} />
-            {/* <img class="absolute top-0 left-60 max-xl:hidden" src="/sparkles-1.svg"></img>
-            <img class="absolute bottom-96 right-4 max-xl:hidden" src="/sparkles-1.svg"></img>
-            <img class="absolute top-[700px] left-[400px] max-xl:hidden" src="/sparkles-2.svg"></img> */}
-            <img src="/transition-3-slate-50.svg" class="bg-sky-500 rotate-180"></img>
+            <div class="relative">
+                <img src="/transition-3-slate-50.svg" class="bg-sky-500 rotate-180"></img>
+                <div class="w-full absolute bottom-0 h-[1px] bg-sky-500"></div>
+            </div>
         </section>
     );
 }

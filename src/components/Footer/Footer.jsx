@@ -13,6 +13,7 @@ const Footer = ({ scrollTo, about, projects, contact, intro }) => {
             <div class="relative">
                 <img src="/transition-6-pink-600.svg" class="absolute rotate-180 top-0"></img>
                 <img src="/transition-6-amber-300.svg" class="rotate-180"></img>
+                <div class="w-full absolute top-0 h-[1px] bg-amber-300"></div>
             </div>
             <div class="flex w-full items-center justify-around max-md:flex-col max-md:gap-4">
                 <div class="flex flex-col items-center">
