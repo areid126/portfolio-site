@@ -10,7 +10,7 @@ const IMAGES = [
 
 const About = ({ ref }) => {
     return (
-        <section ref={ref} class="items-center bg-slate-50 text-slate-50 min-h-screen relative">
+        <section ref={ref} class="flex flex-col items-center bg-slate-50 text-slate-50 min-h-screen relative">
             <div class="flex flex-col gap-1 items-center pb-10 xl:pb-40 z-2">
                 <h1 class="text-center text-3xl font-bold text-pink-600 uppercase">About Me</h1>
                 <img src="/underline-3-pink-600.svg"></img>
@@ -25,9 +25,10 @@ const About = ({ ref }) => {
             <h2 class="text-center mt-32 text-2xl font-bold text-slate-800">SKILLS</h2>
             <SkillList/>
             <ImageList images={IMAGES} hide={"max-xl:hidden"} />
-            <div class="relative">
-                <img src="/transition-3-slate-50.svg" class="bg-sky-500 rotate-180"></img>
+            <div class="relative flex w-full mt-auto">
+                <img src="/transition-3-slate-50.svg" class="bg-sky-500 rotate-180 w-full"></img>
                 <div class="w-full absolute bottom-0 h-[1px] bg-sky-500"></div>
+                <div class="w-full absolute top-0 h-[1px] bg-slate-50"></div>
             </div>
         </section>
     );

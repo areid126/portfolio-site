@@ -22,8 +22,8 @@ const Projects = ({ ref }) => {
                 <img src="/underline-5-slate-50.svg"></img>
             </div>
             <ProjectList />
-            <div class="relative">
-                <img src="/transition-7-sky-400.svg" class="bg-amber-300 rotate-180"></img>
+            <div class="relative flex w-full mt-auto">
+                <img src="/transition-7-sky-400.svg" class="bg-amber-300 rotate-180 w-full"></img>
                 <div class="w-full absolute bottom-0 h-[1px] bg-amber-300"></div>
                 <div class="w-full absolute top-0 h-[1px] bg-sky-500"></div>
             </div>

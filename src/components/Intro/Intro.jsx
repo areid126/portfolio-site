@@ -17,7 +17,7 @@ const Intro = ({ scrollTo, about, projects, contact, ref }) => {
                 </div>
             </div>
             <img class="absolute bottom-64 right-48 max-xl:hidden" src="/mouse.svg"></img>
-            <img src="/transition-2-slate-50.svg"></img>
+            <img src="/transition-2-slate-50.svg" class="w-full"></img>
         </section>
     );
 }
