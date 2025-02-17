@@ -46,7 +46,7 @@ const Contact = ({ ref }) => {
 
         // Send a fetch request to email handler
         try {
-            const res = await fetch("http://localhost:3000", {
+            const res = await fetch(import.meta.env.VITE_BACKEND_URL, {
                 method: "POST",
                 body: JSON.stringify(body),
                 headers: {
