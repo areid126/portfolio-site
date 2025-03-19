@@ -1,6 +1,6 @@
 const SKILLS = [
-    { text: "Express React HTML CSS", colour: "bg-pink-800"},
-    { text: "Javascript Java C Python", colour: "bg-pink-700"},
+    { text: "Express React HTML CSS .NET%20MAUI", colour: "bg-pink-800"},
+    { text: "Javascript Java C C# Python", colour: "bg-pink-700"},
     { text: "MongoDB MySQL SQL", colour: "bg-pink-600"},
     { text: "Git GitHub", colour: "bg-pink-500"}
 ];
@@ -9,7 +9,7 @@ const SkillBubble = ({skill}) => {
     return (
         <li class="rounded-full border-4 border-dashed w-1/4 aspect-[1/1] max-lg:w-auto  max-w-[250px]">
             <div class={`m-4 flex flex-col aspect-[1/1] items-center justify-center rounded-full ${skill.colour}`}>
-                {skill.text.split(" ").map(word => <p>{word}</p>)}
+                {skill.text.split(" ").map(word => <p>{decodeURI(word)}</p>)}
             </div>
         </li>
     );
