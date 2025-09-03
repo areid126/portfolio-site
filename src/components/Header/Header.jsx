@@ -1,5 +1,7 @@
 import Sidebar from "./Sidebar";
 import NavButtons from "./NavButtons";
+import underline1 from "../../assets/underline-1-slate-800.svg"
+
 
 const NAVSTYLE = "max-lg:hidden flex-row gap-10";
 
@@ -15,7 +17,7 @@ const Header = ({ scrollTo, about, projects, contact, ref }) => {
         <header ref={ref} class="flex h-fit w-full flex-1 flex-row justify-around pt-10 items-center">
             <div class="flex flex-col gap-4 items-center max-sm:gap-1">
                 <h1 class="text-nowrap text-5xl font-semibold text-slate-800  max-sm:text-2xl">Abbey's Portfolio</h1>
-                <img class="max-sm:w-52 w-full" src="/underline-1-slate-800.svg"></img>
+                <img class="max-sm:w-52 w-full" src={underline1}></img>
             </div>
             <NavButtons buttons={BUTTONS} style={NAVSTYLE}/>
             <Sidebar scrollTo={scrollTo} about={about} projects={projects} contact={contact} buttons={BUTTONS}/>

@@ -2,6 +2,7 @@ import { useState } from "react";
 import { RemoveScrollBar } from "react-remove-scroll-bar";
 import { AnimatePresence, motion } from 'framer-motion'
 import NavButtons from "./NavButtons";
+import star from "../../assets/star.svg"
 
 
 // Animation for the background
@@ -42,7 +43,7 @@ const Sidebar = ({ scrollTo, about, projects, contact }) => {
                         <motion.nav {...animateSidebar} class="absolute top-0 right-0 h-full bg-slate-50 flex flex-col items-end opacity-100">
                             <button onClick={() => setOpen(false)}  class="bg-[url('/x-slate-800.png')] bg-no-repeat bg-contain h-4 w-4 m-4"></button>
                             <NavButtons buttons={BUTTONS} style={SIDEBARSTYLE} />
-                            <img src="/star.svg" class="m-10"></img>
+                            <img src={star} class="m-10"></img>
                         </motion.nav>
                     </>
                 )}

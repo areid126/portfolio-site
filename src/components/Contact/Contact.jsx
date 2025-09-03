@@ -1,19 +1,29 @@
 import { useState } from "react";
 import ImageList from "../ImageList";
+import arrow2 from "../../assets/arrow-2.svg"
+import arrow7 from "../../assets/arrow-7.svg"
+import arrow5 from "../../assets/arrow-5.svg"
+import arrow9 from "../../assets/arrow-9.svg"
+import arrow6 from "../../assets/arrow-6.svg"
+import arrow4 from "../../assets/arrow-4.svg"
+import underline4 from "../../assets/underline-4-slate-800.svg"
+
+
+
 
 // Regex for identifying if something looks like an email
 const EMAIL = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
 
 const IMAGES1 = [
-    {src: "/arrow-2.svg", style: "rotate-[60deg]"},
-    {src: "/arrow-7.svg", style: "rotate-[25deg]"},
-    {src: "/arrow-5.svg", style: "rotate-[20deg]"},
+    {src: arrow2, style: "rotate-[60deg]"},
+    {src: arrow7, style: "rotate-[25deg]"},
+    {src: arrow5, style: "rotate-[20deg]"},
 ];
 
 const IMAGES2 = [
-    {src: "/arrow-9.svg", style: "rotate-90"},
-    {src: "/arrow-6.svg", style: "rotate-90"},
-    {src: "/arrow-4.svg", style: "rotate-180"},
+    {src: arrow9, style: "rotate-90"},
+    {src: arrow6, style: "rotate-90"},
+    {src: arrow4, style: "rotate-180"},
 ];
 
 const Contact = ({ ref }) => {
@@ -98,7 +108,7 @@ const Contact = ({ ref }) => {
 
                 <div class="flex flex-col items-center py-10">
                     <h1 class="text-center text-3xl font-bold uppercase">Contact Me</h1>
-                    <img src="/underline-4-slate-800.svg"></img>
+                    <img src={underline4}></img>
                 </div>
 
                 <label class="font-semibold my-2">Name</label>

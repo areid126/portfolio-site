@@ -1,25 +1,31 @@
+import flashcards from "../../assets/flashcards.png"
+import bpia from "../../assets/bpia.png"
+import minesweeper from "../../assets/minesweeper.png"
+import sudoku from "../../assets/sudoku_solver.png"
+
+
 const PROJECTS = [
     {
         title: "Flashcards", 
-        image: "/flashcards.png", 
+        image: flashcards, 
         desc: "A website that can be used to create and study sets of flashcards. The frontend uses React with Vite, is styled using Tailwind CSS and contains animations done with Framer Motion. The backend is an Express server that stores data in MongoDB.", 
         link: "https://github.com/areid126/cuecard-site"
     },
     {
         title: "BPIA", 
-        image: "/bpia.png", 
+        image: bpia, 
         desc: "Block Process Internet Access: A command line program that allows the user to block or unblock any process or program currently running on their computer from accessing the internet. It does this by adding and removing rules from the Windows Filtering Platform. This program is written in C and uses several different Windows APIs and as such, only runs on Windows devices.", 
         link: "https://github.com/areid126/bpia"
     },
     {
         title: "Minesweeper", 
-        image: "/minesweeper.png", 
+        image: minesweeper, 
         desc: "A recreation of the original Minesweeper game, written in Java. It has a frontend GUI written using Swing, which is designed to look like the classic Minesweeper game.", 
         link: "https://github.com/areid126/minesweeper-java"
     },
     {
         title: "Sudoku Solver", 
-        image: "/sudoku_solver.png", 
+        image: sudoku, 
         desc: "A command line program, that can be used to get either a complete solution or a step-by-step solution for solving a Sudoku. It uses a combination of programmed game rules and back tracking techniques to be able to solve any sudoku. This program is written using Python and takes its input in the form of a CSV file containing the sudoku. ", 
         link: "https://github.com/areid126/sudoku-solver"
     },
