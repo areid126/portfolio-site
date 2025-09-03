@@ -1,7 +1,7 @@
 const DETAILS = [
-    {title: "Overview", body: "I am an undergraduate in my third year at the University of St Andrews, where I am on track to graduate with a first-class honours degree in Computer Science. I am proficient in several areas of computer science and specialise in full-stack web development, specifically making websites using Express and React."},
-    {title: "Outlook", body: "I am always looking to learn new skills and technologies and as such am always experimenting with different web development tools and keeping up with the ever-changing web development environment."},
-    {title: "Personal Life", body: "Outside of work I do archery and have an interest in travelling and sightseeing. I recently completed a semester studying abroad in Australia at Macquarie University, where I developed both my skills as a web developer and myself as a person, becoming more independent and responsible."},
+    {title: "Overview", body: "I am an undergraduate in my fourth year of MSci Computer Science at the University of St Andrews, where I am on track to graduate with a first-class honours degree. I have experience with many areas of computer science, from web development to operating systems and everything in between."},
+    {title: "Outlook", body: "I love learning about new areas of computer science, as well as expand my knowledge of areas I am already familiar with. As such, I am always working on new projects and tackling technologies I am not familiar with."},
+    {title: "Personal Life", body: "Outside of my studies, I love to travel and sightsee. Most recently, I travelled to Sydney Australia to complete a semester studying abroad at Macquarie University, during which I grew a lot as a programmer and as a person. I also enjoy sightseeing domestically and have been travelling all across Scotland to visit different castles."},
 ];
 
 const Detail = ({detail}) => {

@@ -1,6 +1,6 @@
 const SKILLS = [
-    { text: "Express React HTML CSS .NET%20MAUI", colour: "bg-pink-800"},
-    { text: "Javascript Java C C# Python", colour: "bg-pink-700"},
+    { text: "Javascript Java C C# Python", colour: "bg-pink-800"},
+    { text: "Express React HTML/CSS Swing .NET%20MAUI", colour: "bg-pink-700"},
     { text: "MongoDB MySQL SQL", colour: "bg-pink-600"},
     { text: "Git GitHub", colour: "bg-pink-500"}
 ];
