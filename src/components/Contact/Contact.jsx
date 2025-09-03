@@ -34,6 +34,7 @@ const Contact = ({ ref }) => {
     const [message, setMessage] = useState(undefined);
     const [gotcha, setGotcha] = useState(undefined);
     const [err, setErr] = useState(undefined);
+    const [msg, setMsg] = useState(undefined);
     const [submitted, setSubmitted] = useState(false);
 
     // Function for handling the posts
@@ -54,6 +55,8 @@ const Contact = ({ ref }) => {
 
         console.log(body);
 
+        setMsg("Request has been sent. Please wait. It may take some time to process.");
+
         // Send a fetch request to email handler
         try {
             const res = await fetch(import.meta.env.VITE_BACKEND_URL, {
@@ -64,17 +67,21 @@ const Contact = ({ ref }) => {
                 }
             });
 
+            setMsg(undefined); // Clear the message after a response is received
+
             // If the request was successful do something
             if (res.status === 200) {
                 // Do something
                 setSubmitted(true);
-                setErr(undefined); // Remove any error messages
+                setErr(undefined); // Remove any error messages        
             }
             // Display the appropriate error code if an error occurs
             else if (res.status === 400) setErr("Please complete all fields");
             else if (res.status === 403) setErr("An error occurred");
             else if (res.status === 404) setErr("Please enter a valid email");
+            else setErr("An error occurred. Please try again later");
         } catch {
+            setMsg(undefined);
             setErr("An error occurred. Please try again later");
         }
     }
@@ -124,6 +131,7 @@ const Contact = ({ ref }) => {
                 <label class="font-semibold my-2">Message</label>
                 <textarea onChange={(e) => setMessage(e.target.value)} class="outline-none focus:ring-2 ring-offset-2 ring-slate-600 border rounded-md p-2 min-h-36 max-sm:min-h-20" placeholder="message" name="message"></textarea>
                 <p class="text-center font-semibold mt-4 text-rose-700" >{err}</p>
+                {msg && <p class="text-center font-semibold mt-4" >{msg}</p>}
                 <input onClick={onSubmit} class="text-xl font-semibold text-slate-50 h-12 cursor-pointer rounded-full bg-amber-400 px-6 py-2.5 hover:bg-amber-100 hover:text-amber-400 my-7" type="submit" value="Submit"></input>
             </form>
             <ImageList images={IMAGES2} hide={"max-lg:hidden"}/>
